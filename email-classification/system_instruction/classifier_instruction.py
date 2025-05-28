@@ -21,8 +21,12 @@ JSON FORMAT:
         "sender_phone": "phone or null"
     },
     "user_exists": [TOOL RESULT - DO NOT GUESS],
+    "userInput": "[INCLUDE THE COMPLETE ORIGINAL EMAIL INPUT HERE]",
     "reasoning": "Called check_user_in_database, result was [true/false]. Classification reasoning..."
 }
 
-REQUIREMENT: Call the tool first, always mention tool result in reasoning.
+REQUIREMENTS:
+- Call the tool first, always mention tool result in reasoning
+- Include the complete original email input in the userInput field
+- userInput should contain the full email: subject, sender, and body content
 """
